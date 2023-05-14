@@ -1,0 +1,187 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+
+  body {
+    background: linear-gradient(45deg, #FF69B4, #ADFF2F, #FFFF00);
+    background-size: 6000% 6000%;
+    animation: gradientAnimation 15s ease infinite;
+  }
+  
+  @keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  section {
+    background-color: whitesmoke;
+    margin: 10px;
+    padding: 5px;
+  }
+  
+  header {
+    background-color: #E5E5E5;
+    padding: 20px;
+    width: 100%;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    color: #333;
+  }
+  
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+  }
+  
+  nav ul li {
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+    gap: 20px;
+  }
+  
+  .gallery img {
+    width: 100%;
+    height: auto;
+  }
+
+  .gallery figure {
+    position: relative;
+  }
+  
+  .gallery figcaption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 10px;
+    margin: 0;
+    text-align: center;
+  }
+
+  #aktualnosci {
+    padding: 30px;
+  }
+
+  #aktualnosci ul li {
+    font-size: 20px;
+  }
+
+  #opis {
+    font-size: 20px;
+  }
+
+  #opis ul li {
+    list-style: none;
+  }
+  
+  footer {
+    background-color: #333;
+    color: #FFF;
+    padding: 20px;
+  }
+  
+  footer h2 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #FFF;
+  }
+  
+  footer ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  footer ul li {
+    margin-bottom: 10px;
+  }
+
+  footer a {
+    color: white;
+  }
+
+
+  /* Resetowanie marginesów i paddingów dla wszystkich elementów */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Ustawienie szerokości dla elementu body */
+body {
+  width: 100%;
+}
+
+/* Ustawienie rozmiaru czcionki dla elementów na stronie */
+html, body {
+  font-size: 16px;
+}
+
+/* Dostosowanie rozmiaru czcionki dla urządzeń mobilnych */
+@media only screen and (max-width: 600px) {
+  html, body {
+    font-size: 14px;
+  }
+}
+
+/* Ustawienie jednolitej szerokości dla elementów */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Dostosowanie marginesów i paddingu dla urządzeń mobilnych */
+@media only screen and (max-width: 600px) {
+  .container {
+    padding: 0 10px;
+  }
+}
+
+/* Układ w formie kolumn */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Ustawienie szerokości dla kolumn */
+.col {
+  flex: 1;
+  margin: 10px;
+}
+
+/* Dostosowanie szerokości dla urządzeń mobilnych */
+@media only screen and (max-width: 600px) {
+  .col {
+    flex: 100%;
+    margin: 10px 0;
+  }
+}
